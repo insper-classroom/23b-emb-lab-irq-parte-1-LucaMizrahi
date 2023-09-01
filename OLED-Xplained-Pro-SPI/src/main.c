@@ -41,7 +41,12 @@ void handle_frequency(int is_up);
 /************************************************************************/
 
 void but1_callback(void){
-	but1_flag != but1_flag;
+	if (pio_get(BUT1_PIO, PIO_INPUT, BUT1_IDX_MASK)) {
+		// PINO == 1 --> Borda de subida
+		} else {
+		// PINO == 0 --> Borda de descida
+	}
+	but1_flag = 1;
 }
 
 void handle_frequency(int is_up){
