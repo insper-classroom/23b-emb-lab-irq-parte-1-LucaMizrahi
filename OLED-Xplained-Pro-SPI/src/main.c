@@ -273,8 +273,6 @@ int main (void)
 			}
 			but_flag3 = 0;	
 		}
-		
-		
 		pmc_sleep(SAM_PM_SMODE_SLEEP_WFI);
 	}
 }
