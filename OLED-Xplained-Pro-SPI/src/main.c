@@ -121,7 +121,6 @@ int pisca_led(int n, int t, int i){
 // Inicializa botao SW0 do kit com interrupcao
 void io_init(void)
 {
-
 	// Configura Oled 1
 	pmc_enable_periph_clk(OLED_LED_1_ID);
 	pio_configure(OLED_LED_1, PIO_OUTPUT_0, OLED_LED_1_IDX_MASK, PIO_DEFAULT);
