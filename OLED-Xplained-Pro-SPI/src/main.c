@@ -165,7 +165,6 @@ int main (void)
 	int frequencia_default = 500;
 	char str[128];
 	int tempo = 0;
-	int atualiza = 0;
 	
 	// Inicializa clock
 	sysclk_init();
